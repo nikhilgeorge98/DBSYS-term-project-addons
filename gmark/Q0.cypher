@@ -1,0 +1,1 @@
+MATCH (a0:n0)<-[:p3]-(a1:n1) RETURN COUNT(*)

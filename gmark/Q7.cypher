@@ -1,0 +1,1 @@
+MATCH (a0:n3)-[:p2]->(a1:n2)-[:p3]->(a2:n0)<-[:p2]-(a3:n0) RETURN COUNT(*)
