@@ -16,7 +16,7 @@ To run hypertree width on the benchmarks:
 1. Clone the original repo: https://github.com/jessicapham/DBSYS-term-project
 2. Clone this repo: https://github.com/nikhilgeorge98/DBSYS-term-project-addons
 3. Navigate to the original repository's root: `cd ./DBSYS-term-project`
-4. Copy all add-ons to root directory: `cp -rf ../DBSYS-term-project-addons/. .`
+4. Copy all add-ons to root directory: `rsync -av -f "- .*" ../DBSYS-term-project-addons/* .`
 5. Fetch all the data from submodules: `git submodule update --init --recursive`
 6. Build Docker image: `./build.sh`
 7. Run benchmarks: `./treewidths.sh`
